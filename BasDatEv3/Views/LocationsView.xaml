@@ -1,0 +1,143 @@
+﻿<Page x:Class="BasDatEv3.Views.LocationsView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BasDatEv3.Views"
+      xmlns:ui="clr-namespace:BasDatEv3.UIElements"
+      mc:Ignorable="d" 
+      d:DesignHeight="420" d:DesignWidth="800"
+      Title="LocationsView">
+
+    <Page.Resources>
+
+        <ResourceDictionary>
+
+
+            <ResourceDictionary.MergedDictionaries>
+
+                <ResourceDictionary Source="/PageResources.xaml"/>
+
+            </ResourceDictionary.MergedDictionaries>
+
+        </ResourceDictionary>
+
+    </Page.Resources>
+
+    <Grid>
+
+        <Border Background="White">
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+
+                    <RowDefinition Height="60"/>
+                    <RowDefinition/>
+
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0"
+                           Grid.Column="0"
+                           Text="Locaciones Existentes"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Left"
+                           Margin="20,0,0,0"
+                           FontSize="20"
+                           FontWeight="SemiBold">
+
+
+
+                </TextBlock>
+
+                <Grid Grid.Row="1"
+                      Grid.Column="0">
+
+                    <Grid.RowDefinitions>
+
+                        <RowDefinition Height="50"/>
+                        <RowDefinition/>
+
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Orientation="Horizontal"
+                                Grid.Row="0">
+
+                        <Button Width="100"
+                                Height="30"
+                                Margin="10,0,0,0"
+                                Content="Insertar"
+                                Background="LightGray"
+                                BorderBrush="Transparent"
+                                BorderThickness="0"
+                                x:Name="InsertLocation"
+                                Click="InsertLocation_Click">
+
+
+                        </Button>
+
+
+
+                    </StackPanel>
+
+                    <Border CornerRadius="10"
+                            Grid.Row="1">
+
+                        <Grid>
+
+                            <DataGrid Margin="10"
+                                  Style="{StaticResource DataGridGeneralStyle}"
+                                  x:Name="MainDatagrid"
+                                  AutoGenerateColumns="False">
+
+                                <DataGrid.Columns>
+
+                                    <DataGridTextColumn Header="Nombre" Binding="{Binding LocationCode}"/>
+
+                                    <DataGridTemplateColumn Header="Editar">
+
+                                        <DataGridTemplateColumn.CellTemplate>
+
+                                            <DataTemplate>
+
+                                                <ui:Editer x:Name="BtnUpdater" Click="BtnUpdater_Click"/>
+
+                                            </DataTemplate>
+
+                                        </DataGridTemplateColumn.CellTemplate>
+
+                                    </DataGridTemplateColumn>
+
+                                    <DataGridTemplateColumn Header="Eliminar">
+
+                                        <DataGridTemplateColumn.CellTemplate>
+
+                                            <DataTemplate>
+
+                                                <ui:Deleter x:Name="BtnDeleter"
+                                                            Click="BtnDeleter_Click"/>
+
+                                            </DataTemplate>
+
+                                        </DataGridTemplateColumn.CellTemplate>
+
+                                    </DataGridTemplateColumn>
+
+                                </DataGrid.Columns>
+
+                            </DataGrid>
+
+                        </Grid>
+
+                    </Border>
+
+                </Grid>
+
+
+
+            </Grid>
+
+        </Border>
+
+    </Grid>
+</Page>

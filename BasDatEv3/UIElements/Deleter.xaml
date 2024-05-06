@@ -1,0 +1,58 @@
+﻿<UserControl x:Class="BasDatEv3.UIElements.Deleter"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BasDatEv3.UIElements"
+             mc:Ignorable="d" 
+             d:DesignHeight="50" d:DesignWidth="50">
+    <Grid>
+
+        <Button VerticalContentAlignment="Center"
+                    HorizontalContentAlignment="Center"
+                    x:Name="mainButton">
+
+            <Button.Template>
+
+                <ControlTemplate TargetType="Button">
+
+                    <Grid>
+
+                        <Border Background="Transparent"
+                                    BorderBrush="Transparent">
+
+                            <Viewbox Stretch="Uniform" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+                                <Canvas Height="24" Width="24">
+                                    <Path Data="M18 6L17.1991 18.0129C17.129 19.065 17.0939 19.5911 16.8667 19.99C16.6666 20.3412 16.3648 20.6235 16.0011 20.7998C15.588 21 15.0607 21 14.0062 21H9.99377C8.93927 21 8.41202 21 7.99889 20.7998C7.63517 20.6235 7.33339 20.3412 7.13332 19.99C6.90607 19.5911 6.871 19.065 6.80086 18.0129L6 6M4 6H20M16 6L15.7294 5.18807C15.4671 4.40125 15.3359 4.00784 15.0927 3.71698C14.8779 3.46013 14.6021 3.26132 14.2905 3.13878C13.9376 3 13.523 3 12.6936 3H11.3064C10.477 3 10.0624 3 9.70951 3.13878C9.39792 3.26132 9.12208 3.46013 8.90729 3.71698C8.66405 4.00784 8.53292 4.40125 8.27064 5.18807L8 6M14 10V17M10 10V17" 
+                                              Stroke="#000000" 
+                                              StrokeThickness="1.3" 
+                                              StrokeStartLineCap="round" 
+                                              StrokeEndLineCap="round"
+                                              StrokeLineJoin="round" 
+                                              Fill="#00000000" 
+                                              x:Name="TrashIcon"/>
+                                </Canvas>
+                            </Viewbox>
+
+                        </Border>
+
+                    </Grid>
+
+                    <ControlTemplate.Triggers>
+
+                        <Trigger Property="IsMouseOver" Value="True">
+
+                            <Setter TargetName="TrashIcon" Property="Stroke" Value="red"/>
+
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+
+                </ControlTemplate>
+
+            </Button.Template>
+
+        </Button>
+
+    </Grid>
+</UserControl>

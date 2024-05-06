@@ -1,0 +1,118 @@
+﻿<Window x:Class="BasDatEv3.Views.InsertLocationView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BasDatEv3.Views"
+        mc:Ignorable="d"
+        Title="InsertLocationView" Height="200" Width="350"
+        ResizeMode="CanMinimize"
+        WindowStartupLocation="CenterScreen">
+    
+    <Grid>
+
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Insertar Locacion"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Left"
+                   FontSize="16"
+                   Margin="10,0,0,2"
+                   FontWeight="SemiBold">
+
+
+
+        </TextBlock>
+
+        <Grid Grid.Row="1">
+
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="60"/>
+                <RowDefinition/>
+
+            </Grid.RowDefinitions>
+
+            <StackPanel Orientation="Horizontal"
+                        Grid.Row="0"
+                        HorizontalAlignment="Center">
+
+                <StackPanel Orientation="Vertical"
+                            Margin="0,0,0,0"
+                            VerticalAlignment="Center">
+
+                    <TextBlock Text="Tipo de locacion">
+
+
+
+                    </TextBlock>
+
+                    <ComboBox Width="150"
+                             Height="25"
+                             x:Name="CbType">
+
+
+                    </ComboBox>
+
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical"
+                            Margin="20,0,0,0"
+                            VerticalAlignment="Center">
+
+                    <TextBlock Text="Codigo de locacion">
+
+
+
+                    </TextBlock>
+
+                    <TextBox Width="150"
+                             Height="25"
+                             x:Name="TxtCode">
+
+
+
+                    </TextBox>
+
+                </StackPanel>
+
+            </StackPanel>
+
+
+            <StackPanel Grid.Row="3"
+                        Orientation="Horizontal"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center">
+
+                <Button Width="100"
+                        Height="30"
+                        Content="Insertar"
+                        x:Name="InsertButton"
+                        Click="InsertButton_Click">
+
+
+
+                </Button>
+
+                <Button Width="100"
+                        Height="30"
+                        Content="Cancelar"
+                        Margin="20,0,0,0"
+                        x:Name="CancelButton"
+                        Click="CancelButton_Click">
+
+
+
+                </Button>
+
+            </StackPanel>
+
+        </Grid>
+
+    </Grid>
+</Window>

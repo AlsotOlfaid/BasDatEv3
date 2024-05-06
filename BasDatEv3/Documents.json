@@ -1,0 +1,82 @@
+﻿[
+  {
+    "nombre": "Martillo",
+    "descripcion": "Martillo de acero forjado con mango de madera.",
+    "tipo": "Herramienta manual",
+    "costo": 15.99,
+    "cantidad_en_stock": 50,
+    "fecha_de_registro": "2024-05-04"
+  },
+  {
+    "nombre": "Tornillo Phillips",
+    "descripcion": "Tornillo con cabeza en forma de cruz.",
+    "tipo": "Fijación",
+    "costo": 0.25,
+    "cantidad_en_stock": 1000,
+    "fecha_de_registro": "2024-05-04"
+  },
+  {
+    "nombre": "Destornillador plano",
+    "descripcion": "Destornillador con cabeza plana.",
+    "tipo": "Herramienta manual",
+    "costo": 6.49,
+    "cantidad_en_stock": 75,
+    "fecha_de_registro": "2024-05-04"
+  },
+  {
+    "nombre": "Cinta métrica",
+    "descripcion": "Cinta métrica de acero con marcaciones en centímetros y pulgadas.",
+    "tipo": "Medición",
+    "costo": 9.99,
+    "cantidad_en_stock": 30,
+    "fecha_de_registro": "2024-05-04"
+  },
+  {
+    "nombre": "Llave ajustable",
+    "descripcion": "Llave ajustable de acero con apertura variable.",
+    "tipo": "Herramienta manual",
+    "costo": 12.99,
+    "cantidad_en_stock": 40,
+    "fecha_de_registro": "2024-05-04"
+  },
+  {
+    "nombre": "Clavo de acero",
+    "descripcion": "Clavo de acero galvanizado de 2 pulgadas.",
+    "tipo": "Fijación",
+    "costo": 0.1,
+    "cantidad_en_stock": 500,
+    "fecha_de_registro": "2024-05-04"
+  },
+  {
+    "nombre": "Sierra manual",
+    "descripcion": "Sierra de mano con mango ergonómico.",
+    "tipo": "Herramienta manual",
+    "costo": 24.99,
+    "cantidad_en_stock": 20,
+    "fecha_de_registro": "2024-05-04"
+  },
+  {
+    "nombre": "Pegamento para madera",
+    "descripcion": "Adhesivo resistente al agua para unir piezas de madera.",
+    "tipo": "Adhesivo",
+    "costo": 8.49,
+    "cantidad_en_stock": 15,
+    "fecha_de_registro": "2024-05-04"
+  },
+  {
+    "nombre": "Cinta adhesiva",
+    "descripcion": "Cinta adhesiva transparente de uso general.",
+    "tipo": "Adhesivo",
+    "costo": 1.99,
+    "cantidad_en_stock": 100,
+    "fecha_de_registro": "2024-05-04"
+  },
+  {
+    "nombre": "Broca para madera",
+    "descripcion": "Broca de acero para taladrar madera.",
+    "tipo": "Herramienta eléctrica",
+    "costo": 5.99,
+    "cantidad_en_stock": 50,
+    "fecha_de_registro": "2024-05-04"
+  }
+]

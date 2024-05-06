@@ -1,0 +1,73 @@
+﻿<Window x:Class="BasDatEv3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BasDatEv3"
+        xmlns:ui="clr-namespace:BasDatEv3.UIElements"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="480" Width="850" WindowStartupLocation="CenterScreen">
+
+    <Window.Resources>
+
+        <ResourceDictionary>
+
+
+            <ResourceDictionary.MergedDictionaries>
+
+                <ResourceDictionary Source="/PageResources.xaml"/>
+
+            </ResourceDictionary.MergedDictionaries>
+
+        </ResourceDictionary>
+
+    </Window.Resources>
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0"
+                Background="#FFEBEBEB">
+            
+            
+        </Border>
+
+        <StackPanel Orientation="Horizontal">
+
+            <Button Width="150"
+                    Template="{StaticResource BtnGeneralStyle}"
+                    Content="Piezas"
+                    x:Name="PiecesButton"
+                    Click="PiecesButton_Click">
+
+
+            </Button>
+
+            <Button Width="150"
+                    Template="{StaticResource BtnGeneralStyle}"
+                    Content="Locaciones"
+                    x:Name="LocationsButton"
+                    Click="LocationsButton_Click">
+
+
+            </Button>
+
+        </StackPanel>
+        
+
+
+        <Frame Grid.Row="1"
+               x:Name="MainFrame"
+               NavigationUIVisibility="Hidden">
+            
+            
+        </Frame>
+        
+    </Grid>
+</Window>

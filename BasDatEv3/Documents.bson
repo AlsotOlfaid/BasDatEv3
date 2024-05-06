@@ -1,0 +1,30 @@
+﻿\x16\x00\x00\x00
+{
+    "_id": ObjectId("612f26f2d1e19b7c625f3e95"),
+    "nombre": "Martillo",
+    "descripcion": "Martillo de acero forjado con mango de madera.",
+    "tipo": "Herramienta manual",
+    "costo": 15.99,
+    "cantidad_en_stock": 50,
+    "fecha_de_registro": ISODate("2024-05-04T00:00:00Z")
+}
+\x16\x00\x00\x00
+{
+    "_id": ObjectId("612f26f2d1e19b7c625f3e96"),
+    "nombre": "Tornillo Phillips",
+    "descripcion": "Tornillo con cabeza en forma de cruz.",
+    "tipo": "Fijación",
+    "costo": 0.25,
+    "cantidad_en_stock": 1000,
+    "fecha_de_registro": ISODate("2024-05-04T00:00:00Z")
+}
+\x16\x00\x00\x00
+{
+    "_id": ObjectId("612f26f2d1e19b7c625f3e97"),
+    "nombre": "Destornillador plano",
+    "descripcion": "Destornillador con cabeza plana.",
+    "tipo": "Herramienta manual",
+    "costo": 6.49,
+    "cantidad_en_stock": 75,
+    "fecha_de_registro": ISODate("2024-05-04T00:00:00Z")
+}
